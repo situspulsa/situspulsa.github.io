@@ -181,7 +181,111 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
             </div>
             <div class="col-md-6">
-                <iframe src="http://report.istanareload.co.id/formagen.php?upline=IR01513&amp;up=75" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
+                <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Form Pendaftaran Agen</title>
+    <meta name="description" content="Form Pendaftaran Agen" />
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<p style="margin-top: 10px;margin-left: 10px;">Silahkan isi form registrasi di bawah ini.</p>
+<form class="form-horizontal" method="post" action="" style="margin-top: 20px;margin-left: 10px;">
+  <fieldset>
+    <div class="control-group">
+      <label class="control-label" for="input01" style="text-align: left;padding-left: 20px;">Nama *</label>
+      <div class="controls">
+        <input type="text" name="namalengkap" class="input-xlarge" id="input01" maxlength="20" />
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div class="control-group">
+      <label class="control-label" for="input2" style="text-align: left;padding-left: 20px;">Alamat *</label>
+      <div class="controls">
+        <input type="text" name="alamat" class="input-xlarge" id="input2" maxlength="50" />
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div class="control-group">
+      <label class="control-label" for="input03" style="text-align: left;padding-left: 20px;">No HP *</label>
+      <div class="controls">
+        <input type="text" name="hp" class="input-xlarge" id="input03" maxlength="14" />
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div class="control-group">
+      <label class="control-label" for="input04" style="text-align: left;padding-left: 20px;">GTalk/XMPP</label>
+      <div class="controls">
+        <input type="text" name="ym" class="input-xlarge" id="input04" maxlength="50" />
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div class="control-group">
+      <label class="control-label" for="input12" style="text-align: left;padding-left: 20px;">Verifikasi *</label>
+      <div class="controls">
+        <img src="/images/captcha.php" class="imgcaptcha" id="imgcaptcha" /> <img src="/images/icon/refresh.png" id="reloadcaptcha" style="cursor: pointer;" onclick="reloadCaptcha();" /><br />
+		<input type="text" name="captcha" class="input-xlarge" id="input12" style="margin-top: 10px;" />
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div class="form-actions">
+      <input type="hidden" name="upline" value="IR01513" />
+      <input type="hidden" name="up" value="0" />
+      <input type="hidden" name="lvl" value="0" />
+      <button type="submit" class="btn" id="submit">Submit</button>
+      <input type="reset" class="btn btn-danger" value="Reset" />
+    </div>
+  </fieldset>
+</form>
+<script type="text/javascript">
+$(function() {
+    $("#submit").click(function() {
+    var namalengkap = $("#input01").val();
+    if (namalengkap == "") {
+     	alert("Silahkan isi nama Anda.");
+        $("#input01").focus();
+        return false;
+    }
+	var alamat = $("#input2").val();
+    if (alamat == "") {
+        alert("Silahkan isi alamat Anda.");
+        $("#input2").focus();
+        return false;
+    }
+    var hp = $("#input03").val();
+	if (hp == "") {
+     	alert("Silahkan isi nomor handphone Anda.");
+        $("#input03").focus();
+        return false;
+    }
+	var captcha = $("#input12").val();
+    if (captcha == "") {
+        alert("Silahkan isi kode verifikasi.");
+        $("#input12").focus();
+        return false;
+    }
+    });
+});
+function reloadCaptcha()
+{
+img = document.getElementById('imgcaptcha');
+img.src = '/images/captcha.php?rand_number=' + Math.random();
+}
+</script>
+</body>
+</html>
                 
             </div>
         </div>
