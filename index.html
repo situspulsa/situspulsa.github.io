@@ -191,9 +191,9 @@
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic" />
-    <link rel="stylesheet" href="/css/bootstrap.css" />
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="http://report.istanareload.co.id/css/bootstrap.css" />
+    <script src="http://report.istanareload.co.id/js/jquery.js"></script>
+    <script src="http://report.istanareload.co.id/js/bootstrap.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 <body>
 <p style="margin-top: 10px;margin-left: 10px;">Silahkan isi form registrasi di bawah ini.</p>
@@ -234,7 +234,7 @@
     <div class="control-group">
       <label class="control-label" for="input12" style="text-align: left;padding-left: 20px;">Verifikasi *</label>
       <div class="controls">
-        <img src="/images/captcha.php" class="imgcaptcha" id="imgcaptcha" /> <img src="/images/icon/refresh.png" id="reloadcaptcha" style="cursor: pointer;" onclick="reloadCaptcha();" /><br />
+        <img src="http://report.istanareload.co.id/images/captcha.php" class="imgcaptcha" id="imgcaptcha" /> <img src="http://report.istanareload.co.id/images/icon/refresh.png" id="reloadcaptcha" style="cursor: pointer;" onclick="reloadCaptcha();" /><br />
 		<input type="text" name="captcha" class="input-xlarge" id="input12" style="margin-top: 10px;" />
       </div>
     </div>
@@ -281,12 +281,11 @@ $(function() {
 function reloadCaptcha()
 {
 img = document.getElementById('imgcaptcha');
-img.src = '/images/captcha.php?rand_number=' + Math.random();
+img.src = 'http://report.istanareload.co.id/images/captcha.php?rand_number=' + Math.random();
 }
 </script>
 </body>
-</html>
-                
+</html> 
             </div>
         </div>
         <!-- /.row -->
